@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TERRAZZO</title>
+    <style>
+      h1 {
+        text-align: center;
+        text-decoration: solid;
+        color: #315553;
+        font-weight: bolder;
+      }
+      h2 {
+        text-align: center;
+        color: #315553;
+        border: 1px solid #cfc7c4;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        text-align: justify;
+        line-height: 1.5;
+        font-size: 13;
+        margin: 20 0 10px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #315553;
+        color: #ccc7c3;
+        font-size: 16px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .container {
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+        border-radius: 15px;
+      }
+      .Learn-more {
+        font-size: 12;
+        text-decoration: none;
+        color: #315553;
+      }
+      .Learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+        color: #315553;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>TERRAZZO</h1>
+      <h2>
+        Sustainable flooring choice since the 16th-century, <br />
+        terrazzo is back in a big way!
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/026/713/original/diespeker-terrazzo-kitchen-surface.jpg?1644232130"
+        alt="Terrazzo"
+      />
+      <p>
+        <strong> Terrazzo </strong> is a composite material, poured in place or
+        precast, which is used for floor and wall treatments. It consists of
+        chips of marble, quartz, granite, glass, or other suitable material,
+        poured with a cementitious binder, polymeric, or a combination of both.
+        Metal strips often divide sections, or changes in color or material in a
+        pattern. Additional chips may be sprinkled atop the mix before it sets.
+        After it is cured it is ground and polished smooth or otherwise finished
+        to produce a uniformly textured surface.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Terrazzo"
+        target="_blank"
+        class="Learn-more"
+      >
+        Learn more about
+      </a>
+      <button>Ask for a budget</button>
+      <p class="footer">This page was built by Mónica Couto</p>
+    </div>
+    <script>
+      function ContactButter() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        alert("Thank you " + name + ", we'll be in touch!");
+      }
+      let AskBudget = document.querySelector("button");
+      AskBudget.addEventListener("click", ContactButter);
+    </script>
+  </body>
+</html>
